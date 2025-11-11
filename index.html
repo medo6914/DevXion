@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Mohamed | Cyber Security & Programming</title>
+
+  <!-- Google AdSense Verification + Auto Ads -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6165629906307967"
+       crossorigin="anonymous"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-6165629906307967",
+      enable_page_level_ads: true
+    });
+  </script>
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; direction:rtl; }
+    body { font-family: 'Cairo', sans-serif; background:#0f111a; color:#fff; line-height:1.6; scroll-behavior:smooth; }
+    a { text-decoration:none; color: inherit; }
+
+    header { background:#141824; padding:40px 20px; text-align:center; box-shadow:0 2px 10px rgba(0,0,0,0.6); position:sticky; top:0; z-index:1000; }
+    header h1 { font-size:2.4em; margin-bottom:10px; color:#00eaff; }
+    header p { color:#ccc; font-size:1.2em; }
+
+    nav { display:flex; justify-content:center; background:#1c2230; padding:10px 0; flex-wrap:wrap; }
+    nav a { margin:0 15px; font-weight:bold; color:#00eaff; transition: color 0.3s; }
+    nav a:hover { color:#fff; }
+
+    .container { max-width:900px; margin:60px auto; padding:0 20px; }
+    .section-title { font-size:1.8em; margin-bottom:25px; border-right:4px solid #00eaff; display:inline-block; padding-right:10px; }
+
+    .skills, .projects { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .skill, .project { background:#1c2230; padding:20px; border-radius:10px; flex:1 1 calc(45%); box-shadow:0 4px 15px rgba(0,0,0,0.4); text-align:center; transition: transform 0.3s, box-shadow 0.3s; color:#00eaff; }
+    .skill:hover, .project:hover { transform: translateY(-5px); box-shadow:0 6px 20px rgba(0,0,0,0.6); }
+
+    .contact-info { text-align:center; font-size:1.2em; color:#ccc; }
+    .contact-info a { color:#00eaff; font-weight:bold; }
+
+    footer { background:#141824; text-align:center; padding:25px 0; margin-top:40px; color:#999; }
+
+    .fade-in { opacity:0; transform: translateY(20px); transition: opacity 1s ease-out, transform 1s ease-out; }
+    .fade-in.visible { opacity:1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ahmed Mohamed</h1>
+    <p>Cyber Security & Programming Student</p>
+  </header>
+
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#skills">المهارات</a>
+    <a href="#projects">المشروعات</a>
+    <a href="#contact">تواصل</a>
+  </nav>
+
+  <div class="container fade-in" id="home">
+    <h2 class="section-title">نبذة عني</h2>
+    <p>أنا أحمد محمد، طالب مهتم بمجال <strong>الأمن السيبراني والبرمجة</strong>. بحب أتعلم عن حماية الأنظمة، اختبار الاختراق، وتطوير أدوات بتساعد على تأمين الشبكات والمواقع. هدفى أكون خبير في مجال السايبر وأطور مشاريع قوية تخدم المجال.</p>
+  </div>
+
+  <div class="container fade-in" id="skills">
+    <h2 class="section-title">المهارات</h2>
+    <div class="skills">
+      <div class="skill">Cyber Security Basics</div>
+      <div class="skill">Penetration Testing</div>
+      <div class="skill">Python Programming</div>
+      <div class="skill">Web Development (HTML, CSS, JS)</div>
+      <div class="skill">Linux & Kali Tools</div>
+    </div>
+  </div>
+
+  <div class="container fade-in" id="projects">
+    <h2 class="section-title">المشروعات</h2>
+    <div class="projects">
+      <div class="project">نظام كشف الثغرات</div>
+      <div class="project">أداة تحليل كلمات المرور</div>
+      <div class="project">موقع تعليمي عن الأمن السيبراني</div>
+      <div class="project">بوت مراقبة الشبكات</div>
+    </div>
+  </div>
+
+  <div class="container fade-in" id="contact">
+    <h2 class="section-title">تواصل معي</h2>
+    <p class="contact-info">
+      واتساب: <a href="https://wa.me/201019319316" target="_blank">01019319316</a><br>
+      إيميل: <a href="mailto:medomaree11@gmail.com">medomaree11@gmail.com</a>
+    </p>
+  </div>
+
+  <footer>
+    &copy; 2025 Ahmed Mohamed | جميع الحقوق محفوظة.
+  </footer>
+
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    const options = { threshold: 0.1 };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    faders.forEach(fader => { appearOnScroll.observe(fader); });
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
